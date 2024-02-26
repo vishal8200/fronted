@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        
+        }
+        .container{
+            /* border: 2px solid black; */
+            height: 170vh;
+            width: 100%;
+            display: flex;
+
+        }
+        .box{
+            border: 2px solid black;
+            height: 100vh;
+        
+
+
+        }
+        .box1{
+            height: 100%;
+            width: 30%;
+            position: fixed;
+
+
+
+            
+
+        }
+        .box2{
+            height: 180vh;
+            width: 70%;
+            background-color: rgb(221, 221,224);
+            position: absolute;
+            right: 0px;
+            
+
+        }
+        .box1-int{
+            height: 30%;
+            width: 100%;
+        }
+
+        .box1-int img{
+            height: 25vh;
+            width: 25vh;
+            margin: 12px;
+            border-radius: 5px;
+        }
+        .box1-int h3{
+            margin-left: 12px;
+
+
+
+        }
+        .box1-int h4{
+            margin-left: 12px;
+            color: grey;
+            margin-top: 12px;
+        }
+        .box1-int div a{
+            margin-left: 12px;
+            text-decoration: none;
+           
+        }
+
+        .boxx1{
+            margin-top: 7px;
+        }
+
+        .portf{
+            margin-top: 18px;
+           
+           
+        }
+
+        .portf a{
+            color: green;
+            font-size: 18px;
+        }
+        .icon{
+            margin-top: 15px;
+            margin-left: 12px;
+        }
+       .H1{
+        margin-left: 12px;
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: 500;
+
+
+        }
+        .box2filter{
+            border: 1px solid black;
+            height: 10%;
+            width: 50%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .a{
+            height: 70%;
+            width: 30%;
+            border: 1px solid black;
+            margin-left: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .b{
+            height: 70%;
+            width: 20%;
+            border: 1px solid black;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .c{
+            height: 70%;
+            width: 30%;
+            border: 1px solid black;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .d{
+            height: 70%;
+            width: 30%;
+            border: 1px solid black;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .e{
+            height: 70%;
+            width: 30%;
+            border: 1px solid black;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .abc{
+           height: 120vh;
+           width: 100%;
+           border: 1px solid black;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-evenly;
+            
+        }
+        .HR{
+            height: 4%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .xyz{
+            height: 48%;
+            width: 30%;
+            border: 1px solid black;
+        }
+        .abc1{
+            height: 50%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .abc2{
+            height: 50%;
+            width: 100%;
+            border: 1px solid black;
+            background-color: white;
+
+        }
+        .page-link{
+            height: 5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .page-no{
+            height: 80%;
+            width: 25%;
+            display: flex;
+            margin-top: 20px;
+        }
+        .link-box{
+            height: 100%;
+            width: 18%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tab{
+            color: black;
+            font-family: sans-serif;
+            font-size: 80%;
+        }
+        .page2{
+            height: 130vh;
+            width: 70%;
+            border: 1px solid black;
+            position: absolute;
+            right: 0px;
+            background-color: rgb(221, 221,224);
+            margin-top: 5px;
+
+        }
+        .Photo-box{
+            height: 40%;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 5px;
+        }
+        .photo1{
+            height: 90%;
+            width: 47%;
+            border: 1px solid black;
+        }
+        .photo2{
+            height: 90%;
+            width: 47%;
+            border: 1px solid black;
+        }
+        .content-box{
+            height: 25%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .abt-heading{
+            height: 25%;
+            width: 100%;
+            border: 1px solid black;
+
+        }
+        .content-heading{
+            height: 75%;
+            width: 100%;
+            border: 1px solid black;
+
+        }
+        .tech-skill{
+            height: 45%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .skill{
+            height: 13%;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            
+        }
+        .t-s{
+            height: 60%;
+            width: 15%;
+            margin-left: 2%;
+        }
+        .skills{
+            height: 22%;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .range{
+            height: 80%;
+            width: 96%;
+            border: 1px solid black;
+        }
+        .header{
+            height: 50%;
+            width: 100%;
+
+        }
+        .rng{
+            height: 50%;
+            width: 100%;
+            display: flex;
+        }
+        .Download{
+            height: 53%;
+            width: 24%;
+            margin-right: 72%;
+            background-color: #616161;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .page-3{
+            height: 85vh;
+            width: 100%;
+            border: 1px solid black;
+            position: absolute;
+            right: 0px;
+            margin-top: 23px;
+            background-color: rgb(221, 221, 224);
+            
+        }
+        .charge-box{
+            height: 90%;
+            width: 90%;
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            margin-left: 2%;
+        }
+        .level-box{
+            height: 90%;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content:space-evenly;
+
+        }
+        .levels{
+            height: 92%;
+            width: 31%;
+            border: 1px solid gray;
+        }
+        .box-div{
+            width: 100%;
+            border: 1px solid gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            font-size: 100%;
+            font-weight: 20;
+        }
+        .button{
+            height: 50%;
+            width: 30%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #009688;
+        }
+        .page-4{
+            height: 150vh;
+            width: 75%;
+            border: 1px solid black;
+            position: absolute;
+            right: 0px;
+            top: 2792px;
+            /* margin-top: 19%; */
+        }
+        .contact-me{
+            height: 7%;
+            width: 100%;
+            border: 1px solid black;
+            background-color: #9E9E9E;
+        }
+        .location{
+            height: 13%;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9E9E9E;
+        }
+        .form{
+            height: 37%;
+            width: 100%;
+            border: 1px solid black;
+            background-color: #9E9E9E;
+
+            
+        }
+        .footer{
+            height: 30%;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .w3{
+            height: 10%;
+            width: 100%;
+            border: 1px solid green;
+        }
+        .email-1{
+            height: 100%;
+            width: 32%;
+            border: 1px solid black;
+            background-color:#616161;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .email-2{
+            height: 100%;
+            width: 32%;
+            border: 1px solid black;
+            background-color: #009688;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .email-3{
+            height: 100%;
+            width: 32%;
+            border: 1px solid black;
+            background-color: #616161;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .email-1 i{
+            font-size: 40px;
+        }
+        .email-2 i{
+            font-size: 35px;
+        }
+        .email-3 i{
+            font-size: 30px;
+        }
+        .HR1{
+            height: 3%;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9E9E9E;
+        }
+        .name{
+            height: 25%;
+            width: 96%;
+            border: 1px solid black;
+            margin-left: 2%;
+            background-color: #9E9E9E;
+        }
+        .form-1{
+            height: 50%;
+            width: 100%;
+            border: 1px solid black;
+            font-size: 20px;
+            font-family: sans-serif;
+            padding-top: 2.5%;
+            background-color: #9E9E9E;
+        }
+        .form-2{
+            height: 50%;
+            width: 100%;
+            border: 1px solid black;
+            background-color: white;
+        }
+        .msg{
+            height: 12.5%;
+            width: 20%;
+            border: 1px solid black;
+            margin-left: 2%;
+            margin-top: 2%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .send{
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 20px;
+            color: white;
+        }
+       .footer1{
+        height: 100%;
+        width: 31%;
+        background-color: #9E9E9E;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+       }
+       .footer2{
+        height: 100%;
+        width: 31%;
+        background-color: #9E9E9E;
+        border: 1px solid black;
+       }
+       .footer3{
+        height: 100%;
+        width: 31%;
+        background-color: #9E9E9E;
+        border: 1px solid black;
+       }
+       .footer1-T{
+        width: 100%;
+        height: 32%;
+        font-family: sans-serif;
+        color: white;
+        font-size: 140%;
+        font-weight: 50;
+        padding-top: 10%;
+        font-family: sans-serif;
+        border: 1px solid black;
+       }
+       .footer1-M{
+        width: 100%;
+        height: 32%;
+        color: white;
+        font-family: sans-serif;
+        line-height: 130%;
+        font-weight: 50;
+        border: 1px solid black;
+        font-size: 18px;
+       }
+       .footer1-B{
+        width: 100%;
+        height: 32%;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 50;
+        border: 1px solid black;
+        font-size: 18px;
+       }
+       .footer1-Mid{
+        width: 100%;
+        height: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+       }
+       .footer1-Bot{
+        width: 100%;
+        height: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+       }
+       .img-F{
+        height: 70%;
+        width: 20%;
+        font-family: sans-serif;
+       }
+       .content-F{
+        height: 70%;
+        width: 70%;
+        font-family: sans-serif;
+        font-size: 120%;
+        color: white;
+        font-weight: 50;
+       }
+       .options{
+        height: 50%;
+        width: 95%;
+        margin-left: 2%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       }
+       .opt{
+        height: 15%;
+        width: 24%;
+        background-color: rgb(172, 169, 169);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+       }
+
+
+
+
+
+
+        
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <div class="box1-int">
+                <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="">
+            </div>
+            <div class="box1-int" style="height: 45%;">
+                <h3>PORTFOLIO</h3>
+                <h4>Template by W3.CSS</h4>
+                <div class="boxx1 portf">
+                    <a href="">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        portfolio
+                    </a>
+                </div>
+              
+                <br>
+                <div class="boxx1" >
+                    <a href="" style="color: black;">
+                        <i class="fa-solid fa-user"></i>
+                        About
+                    </a>
+                </div>
+             
+                <br>
+                <div class="boxx1" >
+                    
+                    <a href="" style="color: black;">
+                        <i class="fa-solid fa-envelope"></i>
+                        CONTACT
+                    </a>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"> </i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-square-snapchat"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                
+               
+            </div>
+
+
+           
+
+        </div>
+        <div class="box box2">
+
+
+            <h1 class="H1">My Portfolio</h1>
+            <div class="box2filter">
+                <div class="a">
+                    <h4 style="font-family: sans-serif;font-weight: 100;font-size: 15px;">Filter:</h4>
+                </div>
+                <div class="b">
+                    <a style="color: white;text-decoration: none;font-family: sans-serif;" href="">ALL</a>
+                </div>
+                <div class="c">
+                    <a style="color: black;text-decoration: none;font-family: sans-serif;font-size: 18px;" href=""><i class="fa-regular fa-gem"></i>   Design</a>
+                
+                </div>
+                <div class="d">
+                    <a style="color: black;text-decoration: none;font-family: sans-serif;font-size: 18px;" href=""><i class="fa-regular fa-image"></i>  Photos</a>
+                </div>
+                <div class="e">
+                    <a style="color: black;text-decoration: none;font-family: sans-serif;font-size: 18px;" href=""><i class="fa-solid fa-map-pin"></i>  Art</a>
+                </div>
+
+
+            </div>
+            <div class="HR">
+                <hr style="width: 95%;height: 20%;color: gray;background-color: rgb(160, 158, 158);font-weight: 100;">
+            </div>
+            <div class="abc">
+                <div class="xyz">
+                    <div class="abc1">
+                        <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="" height="100%"; width="100%" >
+                    </div>
+                    <div class="abc2">
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 20px;">Lorem Ipsum</h3>
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 13px;font-weight: 100;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</h3>
+                    </div>
+                </div>
+                <div class="xyz">
+                    <div class="abc1">
+                        <img src="https://www.w3schools.com/w3images/lights.jpg" alt="" height="100%"; width="100%">
+                    </div>
+                    <div class="abc2">
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 20px;">Lorem Ipsum</h3>
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 13px;font-weight: 100;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</h3>
+                        
+                    </div>
+                </div>
+                <div class="xyz">
+                    <div class="abc1">
+                        <img src="	https://www.w3schools.com/w3images/nature.jpg  " alt=""height="100%"; width="100%">
+                    </div>
+                    <div class="abc2">
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 20px;">Lorem Ipsum</h3>
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 13px;font-weight: 100;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</h3>
+                        
+
+                    </div>
+                </div>
+                <div class="xyz">
+                    <div class="abc1">
+                        <img src="https://www.w3schools.com/w3images/p1.jpg" alt=""height="100%"; width="100%">
+                    </div>
+                    <div class="abc2">
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 20px;">Lorem Ipsum</h3>
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 13px;font-weight: 100;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</h3>
+                        
+                    </div>
+                </div>
+                <div class="xyz">
+                    <div class="abc1">
+                        <img src="https://www.w3schools.com/w3images/p2.jpg" alt=""height="100%"; width="100%">
+                    </div>
+                    <div class="abc2">
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 20px;">Lorem Ipsum</h3>
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 13px;font-weight: 100;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</h3>
+                        
+                    </div>
+                </div>
+                <div class="xyz">
+                    <div class="abc1">
+                        <img src="	https://www.w3schools.com/w3images/p3.jpg" alt=""height="100%"; width="100%">
+                    </div>
+                    <div class="abc2">
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 20px;">Lorem Ipsum</h3>
+                        <h3 style="font-family: sans-serif;margin-left: 10px;font-size: 18px;padding-top: 13px;font-weight: 100;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</h3>
+                        
+                    </div>
+                </div>
+                </div>
+                <div class="page-link">
+                    <div class="page-no">
+                        <div class="link-box">
+                            <a href="" class="tab"><i class="fa-solid fa-angles-left"></i></a>
+                        </div>
+                        <div class="link-box">
+                            <a href="" class="tab"><i class="fa-solid fa-1"></i></a>
+                        </div>
+                        <div class="link-box">
+                            <a href="" class="tab"><i class="fa-solid fa-2"></i></a>
+                        </div>
+                        <div class="link-box">
+                            <a href="" class="tab"><i class="fa-solid fa-3"></i></a>
+                        </div>
+                        <div class="link-box">
+                            <a href="" class="tab"><i class="fa-solid fa-4"></i></a>
+                        </div>
+                        <div class="link-box">
+                            <a href="" class="tab"><i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        
+        
+        
+    </div>
+    <div class="page2">
+        <div class="Photo-box">
+            <div class="photo1">
+                <img src="https://www.w3schools.com/w3images/avatar_g.jpg  " alt="" height="100%" width="100%">
+            </div>
+            <div class="photo2">
+                <img src="https://www.w3schools.com/w3images/me2.jpg" alt="" height="100%" width="100%">
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="abt-heading">
+                <h3 style="font-family: sans-serif;font-weight: 200;letter-spacing: 1px;margin-left: 20px;margin-top: 10px;">About Me</h3>
+            </div>
+            <div class="content-heading">
+                <p style="font-family: sans-serif;letter-spacing: 1px;line-height: 20px;margin-left: 20px;margin-top: 10px;">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+        <div class="tech-skill">
+            <div class="skill">
+                <div class="t-s">
+                    <h3 style="font-weight: 400;">Technical Skills</h3>
+                </div>
+              
+             
+               
+
+            </div>
+            <div class="skills">
+                <div class="range">
+                    <div class="header">
+                        <h3 style="font-family: sans-serif;font-weight: 20;font-size: 100%;letter-spacing: 1px;">Photography</h3>
+                    </div>
+                    <div class="rng">
+                        <div class="range1" style="height: 100%;width: 95%;background-color: #616161;color: white;display: flex;justify-content: center;align-items: center;font-family: sans-serif;">95%</div>
+                        <div class="range2" style="height: 100%;width: 6%;background-color: #9E9E9E;"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="range">
+                    <div class="header">
+                        <h3 style="font-family: sans-serif;font-weight: 20;font-size: 100%;letter-spacing: 1px;">Web Design</h3>
+                    </div>
+                    <div class="rng">
+                        <div class="range1" style="height: 100%;width: 95%;background-color: #616161;color: white;display: flex;justify-content: center;align-items: center;font-family: sans-serif;">85%</div>
+                        <div class="range2" style="height: 100%;width: 6%;background-color: #9E9E9E;"></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="range">
+                    <div class="header">
+                        <h3 style="font-family: sans-serif;font-weight: 20;font-size: 100%;letter-spacing: 1px;">Photoshop
+
+                        </h3>
+                    </div>
+                    <div class="rng">
+                        <div class="range1" style="height: 100%;width: 80%;background-color: #616161;color: white;display: flex;justify-content: center;align-items: center;font-family: sans-serif;">80%</div>
+                        <div class="range2" style="height: 100%;width: 6%;background-color: #9E9E9E;"></div>
+
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <button style="padding: 15px; background-color: #616161; color: white; margin-top: 20px;">
+                <i class="fa-solid fa-download"></i>
+                
+                Download Resume</button>
+
+            
+        </div>
+        <div class="page3">
+            <div class="charge-box">
+                <h2 style="font-family: sans-serif;font-weight: 20;font-size: 130%;letter-spacing: 1px;">How much I charge</h2>
+            </div>
+            <div class="level-box">
+                <div class="levels">
+                    <div class="box-div" style="height: 20%;font-size: 170%;color: white;background-color: gray;">Basic</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Web Design</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Photography</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">1 GB Storage</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Mail Support</div>
+                    <div class="box-div" style="height: 23%;color: gray;background-color: white;">$ 10 per month</div>
+                    <div class="box-div" style="height: 17%;">
+                        <div class="button"><a href="" style="color: white;text-decoration: none;font-family: sans-serif;">Sign Up</a></div>
+                    </div>
+                </div>
+                <div class="levels">
+                    <div class="box-div" style="height: 20%;font-size: 170%;color: white;background-color:#009688;">Pro</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Web Design</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Photography</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">50 GB Storage</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Endless Support</div>
+                    <div class="box-div" style="height: 23%;color: gray;background-color: white;">$ 25 per month</div>
+                    <div class="box-div" style="height: 17%;">
+                        <div class="button"><a href=""  style="color: white;text-decoration: none;font-family: sans-serif;">Sign Up</a></div>
+                    </div>
+                </div>
+                <div class="levels">
+                    <div class="box-div" style="height: 20%;font-size: 170%;color: white;background-color: gray;">Premium</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Web Design</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Photography</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Unlimited Storage</div>
+                    <div class="box-div" style="height: 10%;color: gray;background-color: white;">Endless Support</div>
+                    <div class="box-div" style="height: 23%;color: gray;background-color: white;">$ 25 per month</div>
+                    <div class="box-div" style="height: 17%;">
+                        <div class="button"><a href=""  style="color: white;text-decoration: none;font-family: sans-serif;">Sign Up</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="page-4">
+        <div class="contact-me">
+            <h3 style="font-family: sans-serif;font-size: 150%;font-weight: 100;padding-top: 2%;padding-left: 2%;">Contact Me</h3>
+        </div>
+        <div class="location">
+            <div class="email-1"><i class="fa-solid fa-envelope"></i>email@email.com</div>
+            <div class="email-2"><i class="fa-solid fa-location-dot"></i>Chicago, US</div>
+            <div class="email-3"><i class="fa-solid fa-phone"></i>512312311</div>
+        </div>
+        <div class="HR1">
+            <hr style="width: 95%;height: 1%;color: white;background-color: white;">
+        </div>
+        <div class="form">
+            <div class="name">
+                <div class="form-1">Name</div>
+                <div class="form-2"></div>
+            </div>
+            <div class="name">
+                <div class="form-1">Email</div>
+                <div class="form-2"></div>
+            </div>
+            <div class="name">
+                <div class="form-1">Message</div>
+                <div class="form-2"></div>
+            </div>
+            <div class="msg">
+                <a href="" class="send"><i class="fa-solid fa-paper-plane"></i> Send Message</a>
+            </div>
+        </div>
+        <div class="footer">
+          <div class="footer1">
+            <div class="footer1-T">FOOTER</div>
+            <div class="footer1-M">
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+            <div class="footer1-B">
+                <p>Powered by w3.css</p>
+            </div>
+          </div> 
+          <div class="footer2">
+            <div class="footer1-T">BLOG POSTS</div>
+            <div class="footer1-Mid">
+                <div class="img-F">
+                    <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="content-F">Lorem<p style="font-size: 80%; margin-top: 3%;">Sed mattis nunc</p></div>
+            </div>
+            <div class="footer1-Bot">
+                <div class="img-F">
+                    <img src="  https://www.w3schools.com/w3images/gondol.jpg" alt="" height="100%" width="100%">
+                </div>
+                <div class="content-F">Ipsum<p style="font-size: 80%;margin-top: 3%;">Praes tinci sed</p></div>
+            </div>
+          </div>
+          <div class="footer3">
+            <div class="footer1-T">POPULAR TAGS</div>
+            <div class="options">
+                <div class="opt" style="background-color: black;color: white;width: 23%;height: 17%;">Travel</div>
+                <div class="opt" style="width: 27%;">New York</div>
+                <div class="opt" style="width: 24%;">London</div>
+                <div class="opt" style="width: 18%;">IKEA</div>
+                <div class="opt">NORWAY</div>
+                <div class="opt" style="width: 15%;">DIY</div>
+                <div class="opt" style="width: 15%;">Ideas</div>
+                <div class="opt" style="width: 15%;">Baby</div>
+                <div class="opt">Family</div>
+                <div class="opt" style="width: 14%;">News</div>
+                <div class="opt" style="width: 22%;">Clothing</div>
+                <div class="opt">Shopping</div>
+                <div class="opt" style="17%">Sports</div>
+                <div class="opt" style="18%">Games</div>
+            </div>
+          </div>
+        </div>
+        <div class="w3">
+            <h3>Powered by</h3><a href="powered by">W3.css</a>
+        </div>
+    </div>
+</body>
+</html>
+
+    
