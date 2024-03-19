@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <input type="text" id="value1" placeholder="Enter first value">
+    <input type="text" id="value2" placeholder="Enter second value">
+    <select name="" id="operator">
+        <option value="+">Add</option>
+        <option value="-">Sub</option>
+        <option value="*">Multi</option>
+        <option value="/">Divide</option>
+    </select>
+    <!-- <h1>Simple Calculator</h1> -->
+
+        <script>
+            document.getElementById("operator").onclick = function(){
+                let a = document.getElementById("operator").value;
+                console.log(a);
+
+                let b = Number(document.getElementById("value1").value);
+                let c = Number(document.getElementById("value2").value);
+                
+                if(a=='+')
+                {
+                    console.log(b+c);
+                }
+                else if(a=='-')
+                {
+                    console.log(b-c);
+                }
+                else if(a=='*')
+                {
+                    console.log(b*c);
+                }
+                else if(a=='/')
+                {
+                    console.log(b/c);
+                }
+            }
+        </script>
