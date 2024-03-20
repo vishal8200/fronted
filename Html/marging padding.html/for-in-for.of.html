@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="inp">0
+    <input type="text" class="inp">1
+    <input type="text" class="inp">2
+    <input type="text" class="inp">3
+    <input type="text" class="inp">4
+    <input type="text" class="inp">5
+    <input type="text" class="inp">6
+    <input type="text" class="inp">7
+    <input type="text" class="inp">8
+    <button class="btn">Submit</button>
+
+    <script>
+        document.getElementsByClassName("btn")[0].onclick = function(){
+            let n = document.getElementsByClassName("inp");
+            for(let i=0;i<n.length;i++){
+                let a = document.getElementsByClassName("inp")[i].value;
+                console.log(a)
+            }
+        }
+    </script>
+    
+</body>
+</html>
