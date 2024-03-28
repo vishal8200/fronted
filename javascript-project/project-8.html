@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project-8</title>
     <style>
         *{
             margin: 0px;
@@ -12,28 +12,27 @@
         }
         input{
             padding: 10px 50px;
-            margin: 2px;
-            border: 2px solid black;
+            margin: 20px;
+            border: 1px solid black;
         }
         button{
             padding: 10px 20px;
-            border: 2px solid black;
+            border: 1px solid black;
         }
-
     </style>
 </head>
 <body>
-    <input type="text" id="inp1">
-    <button id="btn">Click</button>
-    <h1 id="h"></h1>
+    <input type="text">
+    <button>Click</button>
     <script>
-        document.getElementById("btn").onclick = function(){
-            let a=document.querySelector("inp1").value;
-
-            document.querySelector("input").innerText=a;
+        document.querySelector("button").onclick = function(){
+             let a = document.querySelector("input").value;
+             let b = document.createElement("h1");
+             b.innerText = a;
+             document.body.appendChild(b)
+             document.querySelector("input").value = " ";
+             document.querySelector("input").focus();
         }
     </script>
-    
-    
 </body>
 </html>
