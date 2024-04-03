@@ -5,23 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>    
-             
+<body>
+    <input type="text">
+    <button>click</button>
     <script>
-    
-        let x = [1,2,3,"vishal","niks",8,10,5];
+        // let x = [1,2,3,"nikita","vishal",8,10.5];
 
-        x.push("anu");
-        x.push("vishal");
-        x.pop();
-        x.pop();
-        x.shift();
-        x.unshift("vishal");
-        x.shift();
-        console.log(x);
+        // x.push("nikki");//it insert new value on last index
+        // x.push("virat");
+        // x.pop();//it removes last value from index
+        // x.pop();
+        // x.shift();//it removes first value from index
+        // x.unshift("vinni");//it insert new value on first index
+        // x.shift();
+        // console.log(x);
 
 
+        //swapping method:-
+        // let last_value = x.pop();
+        // let first_value = x.shift();
+        // x.unshift(last_value);
+        // x.push(first_value);
+        // console.log(x);
+
+
+        let x = [];
+        
+        document.querySelector("button").onclick = function(){
+            let a = document.querySelector("input").value;
+            document.querySelector("input").value="";
+            document.querySelector("input").focus();
+            x.push(a);
+            console.log(x);
+        }
     </script>
-    
 </body>
 </html>
