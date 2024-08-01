@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer_box{
+    width: 90%;
+    padding: 0px 50px;
+    padding-top: 30px;
+    background-image: url("https://st4.depositphotos.com/12985656/21212/i/450/depositphotos_212121578-stock-illustration-full-frame-blank-blue-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.inner_box{
+    padding: 0px 10px;
+    padding-top: 10px;
+    background-color: white;
+    height: 120vh;
+}
+.inner_box_top{
+    height: 75%;
+    background-color: rgb(248, 244, 244);
+    display: flex;
+    flex-direction: column;
+}
+.inner_box_bot{
+    height: 21%;
+    margin-top: 3%;
+    display: flex;
+}
+.heading_box{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+}
+.harry{
+    width: 18%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+.options{
+    width: 40%;
+    padding-top: 15px;
+}
+.contact_me{
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot{
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+}
+.options ul{
+    display: flex;
+    justify-content: space-between;
+}
+.options ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+.contact_me button{
+    border: 1px solid red;
+    background-color: white;
+    width: 70%;
+    padding: 8px 0px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.main_box{
+    width: 84%;
+    margin-left: 7%;
+    margin-top: 4%;
+    display: flex;
+}
+.main_box_L{
+    width: 50%;
+    height: 60vh;
+    
+}
+.main_box_R{
+    padding: 50px;
+    width: 50%;
+    background-image: url("https://i0.wp.com/lawfirmpracticemanagementadvice.com/wp-content/uploads/2015/08/10520858_s.jpg?ssl=1");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main_box_L h1{
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+}
+.main_box_L p{
+    font-size: 0.8rem;
+    color: grey;
+    margin-top: 20px;
+    line-height: 20px;
+}
+.button_box{
+    margin-top: 20px;
+}
+.btn1{
+    padding: 12px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    width: 29%;
+}
+.btn2{
+    border: 1px solid orangered;
+    color: black;
+    background-color: white;
+    width: 29%;
+    padding: 12px;
+    margin-left: 10px;
+}
+.icon_content_box{
+    margin-top: 20px;
+    display: flex;
+}
+.icon_content_box_L{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_content_box_M{
+    width: 50%;
+    font-size: 0.8rem;
+    color: grey;
+    line-height: 20px;
+}
+.icon_content_box_R{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon_content_box_R img{
+    height: 100%;
+    width: 100%;
+}
+.icon_content_box_R i{
+    color: orangered;
+}
+.icon_content_box_L i{
+    color: orangered;
+}
+.brands{
+    margin-top: 20px;
+    display: flex;
+}
+.brand1{
+    padding: 30px;
+    width: 20%;
+}
+.brand1 img{
+    height: 70%;
+    width: 200%;
+}
+.inner_box_bot1{
+    width: 25%;
+}
+.inner_box_bot2{
+    width: 25%;
+}
+.icon_top{
+    width: 40px;
+    height: 6vh;
+}
+.content_bot{
+    color: rgb(64, 63, 63);
+}
+.icon_top img{
+    height: 80%;
+    width: 100%;
+}
+.content_bot h5{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 5% 0%;
+}
+.content_bot h6{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: grey;
+    line-height: 15px;
+}
+.experience{
+    width: 70%;
+    padding: 9px;
+    margin-left: 20%;
+    margin-top: 9%;
+    background-color: rgb(106, 0, 255);
+    color: white;
+    font-size: 0.65rem;
+}
+.experience span{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+#evil{
+    height: 20%;
+    width: 18%;
+}
+#bulb{
+    height: 30%;
+    width: 20%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="outer_box">
+        <div class="inner_box">
+            <div class="inner_box_top">
+                <!-- heading box -->
+                <div class="heading_box">
+                    <div class="harry">Harry <span class="dot"></span></div>
+                    <div class="options">
+                        <ul>
+                            <li>Home</li>
+                            <li>Works</li>
+                            <li>About</li>
+                            <li>Portfolio</li>
+                            <li>services</li>
+                        </ul>
+                    </div>
+                    <div class="contact_me">
+                        <button>Contact Me</button>
+                    </div>
+                </div>
+                <!-- main box -->
+                <div class="main_box">
+                    <div class="main_box_L">
+                        <h1>Hy! I Am <br> William Harry</h1>
+                        <p>Product designer and digital creative director working in design field for 7 years so far, specialize user interface design. </p>
+                        <div class="button_box">
+                            <button class="btn1">Hire Me</button>
+                            <button class="btn2">Know More</button>
+                        </div>
+                        <div class="icon_content_box">
+                            <div class="icon_content_box_L">
+                                <i class="fa-brands fa-react"></i>
+                            </div>
+                            <div class="icon_content_box_M">Product Designer and Developer specialized in UI/UX.</div>
+                            <div class="icon_content_box_R">
+                                
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </div>
+                        </div>
+                        <div class="brands">
+                            <div class="brand1">
+                                <img src="schwind.png" alt="">
+                            </div>
+                            <div class="brand1">
+                                <img src="Behance.png" alt="">
+                            </div>
+                            <div class="brand1">
+                                <img src="werum.png" alt="">
+                            </div>
+                            <div class="brand1">
+                                <img src="upwork.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_box_R"></div>
+                </div>
+            </div>
+            <div class="inner_box_bot">
+                <div class="inner_box_bot1">
+                    <div class="experience"><span>7+</span> <br>Years <br>Working <br>Experience</div>
+                </div>
+                <div class="inner_box_bot2">
+                    <div class="icon_top">
+                        <img src="frontend-img.jpeg" alt="">
+                    </div>
+                    <div class="content_bot">
+                        <h5>Frontend Developer</h5>
+                        <h6>We provide with a structured course that will teach you...</h6>
+                    </div>
+                </div>
+                <div class="inner_box_bot2">
+                    <div class="icon_top" id="bulb">
+                        <img src="ui-ux.webp" alt="">
+                    </div>
+                    <div class="content_bot">
+                        <h5>UI/UX designer</h5>
+                        <h6>The user interface is the graphical layout...</h6>
+                    </div>
+                </div>
+                <div class="inner_box_bot2">
+                    <div class="icon_top" id="evil">
+                        <img src="evil-eye-img.avif" alt="">
+                    </div>
+                    <div class="content_bot">
+                        <h5>Branding designer</h5>
+                        <h6>A Brand designer is someone who has a genuine...</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
